@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Color chart
+    401k 31,120,180 1f78b4
+    Social Security 51,160,44 33a02c
+    Trad IRA 227,26,28 e31a1c
+    Roth IRA 255,127,0 ff7f0
+    403b 457 106,61,54 6a3d36
+    Other Savings 177,89,40 b15928
+-->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--  ICONS GO HERE
+    <link rel="icon" href="../../../../favicon.ico">
+    -->
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS 
+    <link href="bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles for this template GO HERE <link href="jumbotron.css" rel="stylesheet"> -->
+    <style>
+    .colorbox {
+    height: 8px;
+    width: 8px;
+    margin: 4px;
+    margin-right: 10px;
+    border: 1px solid black;
+    float: left;
+    }
+    .header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 0px 0px 0px 0px;
+    }
+    .p1 {
+    font-size:12px;
+    }
+    .table-form-input2 input {
+    width: 35px;
+    }
+    .table-form-input1 input {
+    width: 100px;
+    }
+    </style>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>     
+	<script>
+function irs_unisex2014_qx(){
+    
+    qx = [0];
+    qx[1] = 0.000377;
+    qx[2] = 0.000254;
+    qx[3] = 0.000211;
+    qx[4] = 0.000164;
+    qx[5] = 0.000151;
+    qx[6] = 0.000144;
+    qx[7] = 0.000138;
+    qx[8] = 0.000128;
+    qx[9] = 0.000124;
+    qx[10] = 0.000125;
+    qx[11] = 0.00013;
+    qx[12] = 0.000135;
+    qx[13] = 0.000142;
+    qx[14] = 0.000154;
+    qx[15] = 0.00013;
+    qx[16] = 0.000139;
+    qx[17] = 0.000148;
+    qx[18] = 0.000153;
+    qx[19] = 0.000157;
+    qx[20] = 0.000159;
+    qx[21] = 0.000164;
+    qx[22] = 0.000171;
+    qx[23] = 0.000182;
+    qx[24] = 0.000194;
+    qx[25] = 0.00021;
+    qx[26] = 0.000234;
+    qx[27] = 0.000244;
+    qx[28] = 0.000253;
+    qx[29] = 0.000266;
+    qx[30] = 0.000291;
+    qx[31] = 0.000337;
+    qx[32] = 0.000382;
+    qx[33] = 0.000425;
+    qx[34] = 0.000466;
+    qx[35] = 0.000507;
+    qx[36] = 0.000545;
+    qx[37] = 0.000581;
+    qx[38] = 0.000604;
+    qx[39] = 0.000626;
+    qx[40] = 0.000655;
+    qx[41] = 0.000689;
+    qx[42] = 0.00073;
+    qx[43] = 0.000775;
+    qx[44] = 0.000828;
+    qx[45] = 0.000875;
+    qx[46] = 0.000921;
+    qx[47] = 0.000972;
+    qx[48] = 0.001038;
+    qx[49] = 0.001113;
+    qx[50] = 0.001211;
+    qx[51] = 0.001302;
+    qx[52] = 0.00144;
+    qx[53] = 0.001626;
+    qx[54] = 0.001844;
+    qx[55] = 0.002191;
+    qx[56] = 0.002651;
+    qx[57] = 0.003066;
+    qx[58] = 0.003513;
+    qx[59] = 0.003986;
+    qx[60] = 0.004553;
+    qx[61] = 0.005298;
+    qx[62] = 0.006085;
+    qx[63] = 0.007089;
+    qx[64] = 0.008009;
+    qx[65] = 0.009055;
+    qx[66] = 0.010373;
+    qx[67] = 0.011557;
+    qx[68] = 0.012678;
+    qx[69] = 0.014036;
+    qx[70] = 0.015347;
+    qx[71] = 0.016866;
+    qx[72] = 0.01879;
+    qx[73] = 0.02076;
+    qx[74] = 0.023151;
+    qx[75] = 0.025811;
+    qx[76] = 0.028675;
+    qx[77] = 0.032478;
+    qx[78] = 0.03642;
+    qx[79] = 0.04086;
+    qx[80] = 0.045854;
+    qx[81] = 0.0517;
+    qx[82] = 0.058283;
+    qx[83] = 0.064863;
+    qx[84] = 0.073039;
+    qx[85] = 0.081909;
+    qx[86] = 0.091851;
+    qx[87] = 0.104226;
+    qx[88] = 0.117093;
+    qx[89] = 0.130831;
+    qx[90] = 0.146117;
+    qx[91] = 0.159703;
+    qx[92] = 0.175671;
+    qx[93] = 0.191396;
+    qx[94] = 0.205319;
+    qx[95] = 0.22149;
+    qx[96] = 0.23457;
+    qx[97] = 0.249136;
+    qx[98] = 0.264016;
+    qx[99] = 0.274959;
+    qx[100] = 0.284961;
+    qx[101] = 0.301731;
+    qx[102] = 0.313092;
+    qx[103] = 0.324542;
+    qx[104] = 0.335529;
+    qx[105] = 0.345501;
+    qx[106] = 0.353906;
+    qx[107] = 0.361363;
+    qx[108] = 0.368721;
+    qx[109] = 0.375772;
+    qx[110] = 0.382309;
+    qx[111] = 0.388123;
+    qx[112] = 0.393008;
+    qx[113] = 0.396754;
+    qx[114] = 0.399154;
+    qx[115] = 0.4;
+    qx[116] = 0.4;
+    qx[117] = 0.4;
+    qx[118] = 0.4;
+    qx[119] = 0.4;
+    qx[120] = 1.0;
+    return qx;
+    }
+
+function summ(ray) {
+    /* Sums an array.  No checking - make sure all elements are numbers! */
+    total = 0
+    for (var i = 0; i < ray.length; i++) {
+        total += ray[i];
+    }
+    return total;}
+
+function tabhc(heads,arrays) {
+    /* each item in the array is a COLUMN not a row! */
+    outstr = "<table><tr>";
+    for (var i = 0; (i < heads.length); i++) {
+        outstr = outstr + "<th>" + heads[i] + "</th>"; 
+        }
+    outstr = outstr + "</tr>";
+    for (var row = 0; (row < arrays[0].length); row++) {
+        for (var col = 0; (col < arrays.length); col++) {
+            outstr = outstr + "<td>" + arrays[col][row] + "</td>";
+            }
+        outstr = outstr + "</tr>";
+        }
+    outstr = outstr + "</table>"; 
+    return outstr; }
+
+function tabhr(heads,arrays) {
+    /* each item in the array is a ROW not a column! */
+    outstr = '<table><tr style="text-align:center">';
+    for (var i = 0; (i < heads.length); i++) {
+        outstr = outstr + '<th>' + heads[i] + "</th>"; 
+        }
+    outstr = outstr + "</tr>";
+    for (var row = 0; (row < arrays.length); row++) {
+        outstr += '<tr style="text-align:center">';
+        for (var col = 0; (col < arrays[0].length); col++) {
+            outstr = outstr + "<td>" + arrays[row][col] + "</td>";
+            }
+        outstr = outstr + "</tr>";
+        }
+    outstr = outstr + "</table>"; 
+    return outstr; }
+
+function objh(ob) {
+	var head = ['name','value'];
+	var rs = [];
+	for (var key in ob) {
+        var kv = [key,ob[key]];
+		rs.push(kv);
+	}
+	return tabhr(head,rs);
+	}
+
+function nyears(d1,d2) {
+    var y1 = d1.getYear();
+    var y2 = d2.getYear();
+    var m1 = d1.getMonth();
+    var m2 = d2.getMonth();
+    var day1 = d1.getDate();
+    var day2 = d2.getDate();
+    var newd = new Date(1900+y2,m1,day1);
+    var frac = d2 - newd;
+    var msexiny = 31536000000;
+    var result = 0;
+    if (newd < d2) {
+        result = (y2 - y1) + (frac / msexiny);
+    }
+    else {
+        result = (y2 - y1 - 1) + (1 + frac / msexiny);
+    }
+    return result;
+    }
+
+class Row {
+
+  constructor(startdata, sheet, t, y) { //t is the time duration of this savings, y is this year being done
+    this.par = startdata; // parameters
+    this.sheet = sheet
+    this.y = y
+    this.t = t
+    if (this.y == 0) { // first time through
+        this.four01bal = this.par.four01bal; 
+        this.tradirabal = this.par.tradirabal;
+        this.rotirabal = this.par.rotirabal;
+        this.fourbal = this.par.fourbal;
+        this.otherbal = this.par.otherbal;
+        }
+    else if (this.y > this.t) { // then we are on the last loop and we have a fractional year
+        this.frac = this.t % 1; // returns the fractional part
+        }
+    else {
+        this.frac = 1;
+        }
+    if (this.y != 0) {
+        this.lasty = this.sheet[this.sheet.length - 1];
+        this.four01gro = 1 + (this.frac * this.par.four01gro);
+        this.tradiragro = 1 + (this.frac * this.par.tradiragro);
+        this.rotiragro = 1 + (this.frac * this.par.rotiragro);
+        this.fourgro = 1 + (this.frac * this.par.fourgro);
+        this.othergro = 1 + (this.frac * this.par.othergro);
+        this.four01bal = this.lasty.four01bal * this.four01gro + this.par.four01cont;
+        this.tradirabal = this.lasty.tradirabal * this.tradiragro + this.par.tradiracont;
+        this.rotirabal = this.lasty.rotirabal * this.rotiragro + this.par.rotiracont;
+        this.fourbal = this.lasty.fourbal * this.fourgro + this.par.fourcont;
+        this.otherbal = this.lasty.otherbal * this.othergro + this.par.othercont;
+        }
+    }
+    }
+
+class Lo {
+  constructor(i_r) {
+    this.qs = irs_unisex2014_qx();
+    this.lx = [10 ** 9];
+    for (var i = 1; (i < this.qs.length); i++) {
+        this.lx.push((1 - this.qs[i-1]) * this.lx[i-1])
+		}
+    this.Dx = [];
+    this.Nx = [];
+    this.nx12 = [];
+    this.ax = [];
+    for (var i = 0; (i < this.qs.length); i++) {
+        this.Dx.push(this.lx[i] * (1 + i_r) ** -i)};
+    for (var i = 0; (i < this.qs.length); i++) {
+        if (this.Dx[i] == 0) {
+            this.ax.push(0); }
+        else {
+           this.Nx.push(summ(this.Dx.slice(i)));
+           this.nx12.push(this.Nx[i] - (11.0 / 24.0) * this.Dx[i]);
+           this.ax.push(12.0 * this.nx12[i] / this.Dx[i]);
+           }
+    }
+    this.years = [];
+    for (var i = 0; (i < this.qs.length); i++) {
+        this.years.push(i);
+        }
+    }
+	}
+
+	function dater(dtstr) {
+		var yyyy = dtstr.slice(0,4);
+		var mm = dtstr.slice(5,7);
+		var dd = dtstr.slice(8,10);
+		return new Date(yyyy,mm,dd);
+		}
+	function growann(startdate, enddate, startamt, incremt, i) {
+        var t = nyears(startdate, enddate);
+		var v = 1/(1+i);
+		var an = (1 - v**t) / i;
+		var result = (startamt * an) + (incremt * (an - t * v**t) / i);
+		return result;
+		}
+
+	function Loage(age,as) {
+        agey = Math.floor(age);
+		fract = agey % 1;
+	    result = as[agey - 1] + fract * (as[agey] - as[agey - 1]);
+		return result;
+		}
+		
+function territest(){
+    var dob = new Date(1969,7,26);
+    var debug = true;
+    var par = readinput(); // parameters
+    var lifeonly = new Lo(.08);
+        /* pseudocode
+        for each date in first / second / thirdcomm that is > today
+            create object bals containing all bals / conts / rates
+            create new sheet with bals
+                for each row/yr up to and including that tenor
+                    if first row: intialize with starting vals
+                    if last row: set all rates to frac * rate
+                    increment each value by rates and contr
+        */ 
+    var datesin = [par.firstcomm, par.secondcomm, par.thirdcomm];
+    var datescalced = [] // dates we actually do calculations for
+    var wkbook = [] // collection of sheets
+    for (d of datesin) {
+	if (d >= par.lastday) { 
+            datescalced.push(d)
+	    var t = nyears(par.lastday, d); // t is the tenor - duration of the savings period
+	    var sheet = [];
+            var nits = Math.ceil(t) // e.g. 4.3 years, we execute for the fifth (fractional) year
+            for (var yr = 0; yr <= nits; yr++) { // i the year count, start at 0 initiaion and go to 
+                var r = new Row(par,sheet,t,yr);
+                sheet.push(r);
+                }
+            wkbook.push(sheet);
+	    }
+	}
+     /* created the data */
+    pensions = [];
+    for (var i = 0; i < wkbook.length; i++){
+        var age = nyears(dob,datescalced[i])
+        lit = wkbook[i].length - 1; // last item in workbook
+        pensions.push({four01ann : wkbook[i][lit].four01bal / Loage(age,lifeonly.ax),
+                      tradiraann : wkbook[i][lit].tradirabal / Loage(age,lifeonly.ax),
+                       rotiraann : wkbook[i][lit].rotirabal / Loage(age,lifeonly.ax),
+                         fourann : wkbook[i][lit].fourbal / Loage(age,lifeonly.ax),
+                        otherann : wkbook[i][lit].otherbal / Loage(age,lifeonly.ax)
+                      })
+        }
+    if (debug) {
+        var astrin = [];
+        var avals = [];
+        for (var i = 0; i < lifeonly.ax.length; i++) {
+            avals = [i,lifeonly.ax[i].toFixed(3)];
+            astrin.push(avals);
+            }
+	outp = {
+	    lastday : par.lastday,
+	    firstcomm : par.firstcomm,
+	    secondcomm : par.secondcomm,
+	    thirdcomm : par.thirdcomm,
+	    four01bal : par.four01bal,
+	    four01cont : par.four01cont,
+            four01grow : par.four01gro
+	}
+        resultstable = [];
+        for (var i = 0; i < pensions.length; i++){
+            resultstable.push([pensions[i].fourann, 
+                                pensions[i].tradiraann, 
+                                pensions[i].rotiraann, 
+                                pensions[i].fourann, 
+                                pensions[i].otherann]);
+	    debugh = objh(outp) + 
+                    tabhr(['401k','tradira','rothira','457 etc','other'],resultstable) + 
+                    tabhr(['age','ax'],astrin);
+            document.getElementById("debugout").innerHTML = debugh;
+            }
+            }
+    return pensions;
+		}
+
+	function readinput() {
+        	var result = {
+			lastday :  dater(document.getElementById("ret_date").value),
+			firstcomm : dater(document.getElementById("commence1").value),
+			secondcomm : dater(document.getElementById("commence2").value),
+			thirdcomm : dater(document.getElementById("commence3").value),
+			four01bal : 4000,
+			four01gro : .03,
+			four01cont: 800,
+			ssben : parseFloat(document.getElementById("ssbal").value),
+			tradirabal : parseFloat(document.getElementById("irabal").value),
+			tradiragro : parseFloat(document.getElementById("iragro").value),
+			tradiracont : parseFloat(document.getElementById("iracont").value),
+			rotirabal : parseFloat(document.getElementById("rotbal").value),
+			rotiragro : parseFloat(document.getElementById("rotgro").value),
+			rotiracont : parseFloat(document.getElementById("rotcont").value),
+			fourbal : parseFloat(document.getElementById("fourbal").value),
+			fourgro : parseFloat(document.getElementById("fourgro").value),
+			fourcont : parseFloat(document.getElementById("fourcont").value),
+			otherbal : parseFloat(document.getElementById("otherbal").value),
+			othergro : parseFloat(document.getElementById("othergro").value),
+			othercont : parseFloat(document.getElementById("othercont").value),
+            }
+		return result;
+		}
+
+	</script>
+    <script type="text/javascript">    
+	window.onload = function () {
+        var t = territest();
+        var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title:{
+                            text: "Estimated Annual Retirement Income",
+                            fontFamily: "arial black",
+                            fontColor: "#695A42"
+                        },
+                axisX: {
+                            interval: 1,
+                            intervalType: "year"
+                        },
+                axisY:{
+                            valueFormatString:"$#",
+                            gridColor: "#B6B1A8",
+                            tickColor: "#B6B1A8"
+                        },
+                toolTip: {
+                            shared: true,
+                            content: toolTipContent
+                        },
+                data: [{
+                            type: "stackedColumn",
+                            showInLegend: true,
+                            color: "#1f78b4",
+                            name: "Rudd and Wisdom 401(k)",
+                            dataPoints: [
+                                            { y: t.test[0], x: new Date(2011,7,1) },
+                                            { y: t.test[1], x: new Date(2012,7,1) },
+                                            { y: t.test[2], x: new Date(2013,7,1) },
+                                        ]
+                            },
+                            {        
+                                            type: "stackedColumn",
+                                            showInLegend: true,
+                                            name: "Social Security",
+                                            color: "#33a02c",
+                                            dataPoints: [
+                                                                { y: 6.82, x: new Date(2011,7,1) },
+                                                                { y: 9.02, x: new Date(2012,7,1) },
+                                                                { y: 11.80, x: new Date(2013,7,1) },
+                                                            ]
+                                        },
+                            {        
+                                            type: "stackedColumn",
+                                            showInLegend: true,
+                                            name: "Traditional IRA",
+                                            color: "#e31a1c",
+                                            dataPoints: [
+                                                                { y: 7.28, x: new Date(2011,7,1) },
+                                                                { y: 9.72, x: new Date(2012,7,1) },
+                                                                { y: 13.30, x: new Date(2013,7,1) },
+                                                            ]
+                                        },
+                            {        
+                                            type: "stackedColumn",
+                                            showInLegend: true,
+                                            name: "Roth IRA",
+                                            color: "#ff7f00",
+                                            dataPoints: [
+                                                                { y: 8.44, x: new Date(2011,7,1) },
+                                                                { y: 10.58, x: new Date(2012,7,1) },
+                                                                { y: 14.41, x: new Date(2013,7,1) },
+                                                            ]
+                            },
+                            {
+                 
+                                            type: "stackedColumn",
+                                            showInLegend: true,
+                                            name: "403b and 457",
+                                            color: "#6a3d36",
+                                            dataPoints: [
+                                                                { y: 9.44, x: new Date(2011,7,1) },
+                                                                { y: 11.58, x: new Date(2012,7,1) },
+                                                                { y: 18.41, x: new Date(2013,7,1) },
+                                                            ]
+                            },
+                            {
+                  
+                                            type: "stackedColumn",
+                                            showInLegend: true,
+                                            name: "Other Savings",
+                                            color: "#b15928",
+                                            dataPoints: [
+                                                                { y: 12.44, x: new Date(2011,7,1) },
+                                                                { y: 13.58, x: new Date(2012,7,1) },
+                                                                { y: 19.41, x: new Date(2013,7,1) },
+                                                            ]
+                                                                           }
+                ]
+        });
+        chart.render();
+
+        function toolTipContent(e) {
+                var str = "";
+                var total = 0;
+                var str2, str3;
+                for (var i = 0; i < e.entries.length; i++){
+                            var  str1 = "<span style= \"color:"+e.entries[i].dataSeries.color + "\"> "+e.entries[i].dataSeries.name+"</span>: $<strong>"+e.entries[i].dataPoint.y+"<br/>";
+                            total = e.entries[i].dataPoint.y + total;
+                            str = str.concat(str1);
+                        }
+                str2 = "<span style = \"color:DodgerBlue;\"><strong>"+(e.entries[0].dataPoint.x).getFullYear()+"</strong></span><br/>";
+                total = Math.round(total * 100) / 100;
+                str3 = "<span style = \"color:Tomato\">Total:</span><strong> $"+total+"<br/>";
+                return (str2.concat(str)).concat(str3);
+        }
+
+
+        $("#Terri").click(function () {
+
+        var length = chart.options.data[0].dataPoints.length;
+        //test = territest().test + 10
+        //chart.options.title.text = "Test me";
+        //chart.options.data[0].dataPoints[0].y=test()
+        chart.render();
+        });
+    }
+	</script>
+  </head>
+
+  <body>
+      <!--    <main role="main">-->
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron jumbotron-fluid"> 
+        <div class="container">
+          <h3 >Total Retirement Estimator</h3> 
+          <p>This page allows you to estimate your total retirement income.</p>
+          <!--
+          <p>Follow the three steps below.</p>
+          <p><font color="red">First</font> enter your expected last day of work and up to three different dates for the start of your pension.  For example you may want to work to Dec 31, 2025, and start your pension on January 1, 2026, or on January 1, 2028.  The longer you delay, the better your pension is!</p>
+          <p><font color="red">Second</font> enter the balances on your various savings and retirement accounts.  They can all be used to create a retirement income.  For example you may have the lump sum from your 401(K) and you may also want to put in some money from downsizing your house when you retire.</p>
+          <p><font color="red">Third</font> Press the 'Calculate' button to see a graph of your estimated retirement income on your commencement dates.  You can click the button to show the amounts as dollars, or as a percent of your current salary.</p>
+          -->
+        </div>
+      </div>
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Step 1: Enter important dates</h4>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-7 col-form-labem">Last day of work</label>
+                <div class="col-5">
+                  <input class="form-control p1" type="date" value="2018-11-22" id="ret_date">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-7 col-form-label">First Commencement Date</label>
+                <div class="col-5">
+                  <input class="form-control p1" type="date" value="2018-11-22" id="commence1">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-7 col-form-label">Second Commencement Date</label>
+                <div class="col-5">
+                  <input class="form-control p1" type="date" value="2028-11-22" id="commence2">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-7 col-form-label">Third Commencement Date</label>
+                <div class="col-5">
+                  <input class="form-control p1" type="date" value="2038-11-22" id="commence3">
+              </div>
+          </div>
+		  <div id=debugout></div>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Step 2: Enter retirement account balances</h4>
+        <p class="help-text">In the boxes below, fill in the information about your other sources of retirement income.</p>
+			<table class="table borderless table-sm">
+               <tbody>
+                <!-- Rudd and Wisdom 401k -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(31,120,180);"></div>
+                       Rudd and Wisdom 401(k) Plan</div>
+                  </td>
+				  <td>
+                      <div class="p1">
+                      Annual Growth %</div>
+                  </td>
+				</tr>
+				<tr>
+				  <td>Life Only Annuity</td>
+				  <td>$4,577.40</td>
+				  <td></td>
+				</tr>
+                <!-- Social Security -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(51,160,44);"></div>
+                     Social Security Benefit</div>
+				  <td></td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Monthly Benefit</td>
+                  <td class="table-form-input1">$ <input id="ssbal" name="ss_balance" type="number" value="0" data-minvalue="0" data-type="number" data-id="16">
+				  </td>
+                  <td></td>
+				</tr>
+                <!-- Traditional IRAs -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(227,26,28);"></div>
+                     Traditional IRAs</div>
+				  <td></td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Balance</td>
+                  <td class="table-form-input1">$ <input id="irabal" name="ira_balance" type="number" value="0" data-minvalue="0" data-type="number" data-id="17">
+				  </td>
+                  <td class="table-form-input2">
+                          <input id="iragro" name="ira_growth" type="number" value="0" data-minvalue="0" data-maxvalue="10" data-type="number" data-id="18"></td>
+				</tr>
+				<tr>
+				  <td>Annual Contribution</td>
+                  <td class="table-form-input1">$ <input id="iracont" name="ira_cont" type="number" value="0" data-minvalue="0" data-type="number" data-id="19">
+				  </td>
+                  <td></td>
+                <!-- Roth IRAs -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(255,127,0);"></div>
+                     Roth IRAs</div>
+				  <td></td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Balance</td>
+                  <td class="table-form-input1">$ <input id="rotbal" name="roth_balance" type="number" value="0" data-minvalue="0" data-type="number" data-id="20">
+				  </td>
+                  <td class="table-form-input2">
+                          <input id="rotgro" name="rot_growth" type="number" value="0" data-minvalue="0" data-maxvalue="10" data-type="number" data-id="21"></td>
+				</tr>
+				<tr>
+				  <td>Annual Contribution</td>
+                  <td class="table-form-input1">$ <input id="rotcont" name="rot_cont" type="number" value="0" data-minvalue="0" data-type="number" data-id="22">
+				  </td>
+                  <td></td>
+                <!-- 403b and 457 -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(106,61,54);"></div>
+                     403(b) and 457 Plans</div>
+				  <td></td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Balance</td>
+                  <td class="table-form-input1">$ <input id="fourbal" name="four_balance" type="number" value="0" data-minvalue="0" data-type="number" data-id="23">
+				  </td>
+                  <td class="table-form-input2">
+                          <input id="fourgro" name="four_growth" type="number" value="0" data-minvalue="0" data-maxvalue="10" data-type="number" data-id="24"></td>
+				</tr>
+				<tr>
+				  <td>Annual Contribution</td>
+                  <td class="table-form-input1">$ <input id="fourcont" name="four_cont" type="number" value="0" data-minvalue="0" data-type="number" data-id="25">
+				  </td>
+                  <td></td>
+                <!-- Other Savings -->
+				<tr>
+				  <td colspan=2>
+                     <div class="header">
+                     <div class="colorbox" style="background-color: rgb(177,89,40);"></div>
+                     Other Savings</div>
+				  <td></td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Balance</td>
+                  <td class="table-form-input1">$ <input id="otherbal" name="other_balance" type="number" value="0" data-minvalue="0" data-type="number" data-id="26">
+				  </td>
+                  <td class="table-form-input2">
+                          <input id="othergro" name="other_growth" type="number" value="0" data-minvalue="0" data-maxvalue="10" data-type="number" data-id="27"></td>
+				</tr>
+				<tr>
+				  <td>Annual Contribution</td>
+                  <td class="table-form-input1">$ <input id="othercont" name="other_cont" type="number" value="0" data-minvalue="0" data-type="number" data-id="28">
+				  </td>
+                  <td></td>
+			  </tbody>
+			</table>
+
+          </div> 
+          <div class="col-md-5">
+          <p id="pje">Test text</p>
+            <h4>Step 3: Total Retirement Income</h4>
+
+              <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+              <button id="Terri">Press to test</button>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Rudd and Wisdom Inc. 2018</p>
+    </footer>
+
+<!--
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    -->    
+  </body>
+</html>
